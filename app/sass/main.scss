@@ -12,7 +12,9 @@
 .clearfix { display: block; }
 .clearfix:after { content: ""; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; margin: 0; padding: 0; }
 
-
+html, body {
+  height: 100%;
+}
 
 $white: #fff;
 $font: #210604;
@@ -40,6 +42,7 @@ a, a:hover {
   text-decoration: none;
   color: $white;
   cursor: pointer;
+
 }
 .header {
   &__top {
@@ -99,6 +102,7 @@ a, a:hover {
       text-transform: uppercase;
       color: $font !important;
       vertical-align: middle;
+
     }
   }
 
@@ -145,6 +149,9 @@ a, a:hover {
     margin-top: 30px;
     letter-spacing: 3px;
   }
+  &__button:hover {
+      background: #de3b02;
+  }
   &__button {
     background: $back_orange;
     text-transform: uppercase;
@@ -164,8 +171,10 @@ a, a:hover {
 
 
 
+
   }
 }
+
 .info {
   color: $font;
   font-family: HelveticaLight;
@@ -186,27 +195,27 @@ a, a:hover {
     float: right;
   }
 
-    &__title {
-      font-size: 30px;
-      padding-bottom: 40px;
-    }
+  &__title {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
 
-    &__content {
-      padding: 60px 30px;
-      width: 80%;
-      height: 500px;
-      margin: 0 auto;
-      text-align: left;
-      overflow: hidden;
+  &__content {
+    padding: 60px 30px;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
 
+  }
+  &__text {
+    font-size: 16px;
+    &_bold {
+      font-weight: bold;
+      padding-bottom: 20px;
     }
-    &__text {
-      font-size: 16px;
-      &_bold {
-        font-weight: bold;
-        padding-bottom: 20px;
-      }
-    }
+  }
 
 }
 .icons {
@@ -254,10 +263,10 @@ a, a:hover {
     text-align: center;
     text-transform: uppercase;
   }
-  &__button:focus{
+  &__button:hover{
     color: $white;
+    background: #de3b02;
   }
-
   &__button {
     font-size: 18px;
     padding: 7px ;
@@ -267,18 +276,22 @@ a, a:hover {
     background: $back_orange;
     border-radius: 6px;
     text-align: center;
+    text-decoration: none;
+    color: $white;
+
 
     &_btn :focus {
       color: $white;
     }
 
-   &_btn {
-     width: 100%;
-     color: $white;
-     height: 35px;
-     padding: 5px;
-     text-decoration: none;
-   }
+    &_btn {
+      width: 100%;
+      color: $white;
+      height: 35px;
+      padding: 5px;
+      text-decoration: none;
+
+    }
 
   }
   &__name {
@@ -398,6 +411,7 @@ a, a:hover {
   padding: 30px 100px;
   max-width: 100%;
   padding-bottom: 100px;
+  overflow: hidden;
   &__right{
     background: url("../image/about__company_right.jpg")no-repeat left;
     position: absolute;
@@ -435,54 +449,67 @@ a, a:hover {
 
 
 }
-.wrapper {
-  height: 500px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
-}
-.section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
-  background-position: top;
+
+.parallax {
+  /* The image used */
+  background-image: url('../image/about_the_company_paralax.jpg');
+
+  /* Full height */
+  height: 50vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-
-}
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  z-index: -1;
+  background-size: cover;
 }
 
-.bg1::after {
-  background-image: url('../image/about_the_company_paralax.jpg');
-}
-
-.bg2::after {
-  background-image: url('../image/about_the_company_paralax.jpg');
-}
 .footer {
-  &__item {
+  &__logo {
+    float: left;
     width: 33%;
-    display: inline-block;
+    padding-left: 48px;
+  }
+  &__naw{
+    background: #9da4aa;
+    background-size: cover;
+    width: 33%;
+    float: left;
+    height: 150px;
+    padding-top: 33px;
+
+
 
   }
-  &__item:nth-child(2) {
-    margin-left: -5px;
+  &__naw li {
+    text-decoration: none;
+    list-style: none;
   }
-  &__item:nth-child(3) {
-    margin-left:  -5px;
+  &__logo img {
+    width: 95%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  &__address {
+    background: #28353f;
+    background-size: cover;
+    font-size: 14px;
+    text-align: left;
+    color: $white;
+    width: 34%;
+    float: right;
+    height: 150px;
+    padding-left: 40px;
+    padding-top: 30px;
+    word-wrap:normal;
+    line-height: 28px;
+  }
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
   }
 }
 @media (max-width: 1240px) {
@@ -494,12 +521,12 @@ a, a:hover {
 }
 @media (max-width: 991px) {
   .icons {
-      .align-left, .align-right {
-        text-align: center;
-        .icons__caption {
-          padding-right: 0;
-        }
+    .align-left, .align-right {
+      text-align: center;
+      .icons__caption {
+        padding-right: 0;
       }
+    }
   }
   .using__wrapper {
     width: 100%;
@@ -573,7 +600,7 @@ a, a:hover {
   .home__caption {
     font-size: 17px;
   }
-  
+
 
 }
 @media (max-width: 633px) {
@@ -590,8 +617,20 @@ a, a:hover {
   .company__right {
     right: -100px;
   }
-  .company__text {
-    text-align: justify;
+  .footer__address {
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer__naw {
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+  }
+  .footer__logo {
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 514px) {

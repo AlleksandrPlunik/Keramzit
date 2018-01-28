@@ -19,6 +19,9 @@
   margin: 0;
   padding: 0; }
 
+html, body {
+  height: 100%; }
+
 body {
   font-family: HelveticaLight; }
 
@@ -133,6 +136,8 @@ a, a:hover {
     font-weight: bold;
     margin-top: 30px;
     letter-spacing: 3px; }
+  .home__button:hover {
+    background: #de3b02; }
   .home__button {
     background: #ff4200;
     text-transform: uppercase;
@@ -221,8 +226,9 @@ a, a:hover {
     padding-top: 65px;
     text-align: center;
     text-transform: uppercase; }
-  .order__button:focus {
-    color: #fff; }
+  .order__button:hover {
+    color: #fff;
+    background: #de3b02; }
   .order__button {
     font-size: 18px;
     padding: 7px;
@@ -232,7 +238,9 @@ a, a:hover {
     background: #ff4200;
     -webkit-border-radius: 6px;
             border-radius: 6px;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none;
+    color: #fff; }
     .order__button_btn :focus {
       color: #fff; }
     .order__button_btn {
@@ -347,7 +355,8 @@ a, a:hover {
   position: relative;
   padding: 30px 100px;
   max-width: 100%;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  overflow: hidden; }
   .company__right {
     background: url("../image/about__company_right.jpg") no-repeat left;
     position: absolute;
@@ -375,61 +384,59 @@ a, a:hover {
     .company__text_bold {
       font-weight: bold; }
 
-.wrapper {
-  height: 500px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 2px;
-          perspective: 2px; }
+.parallax {
+  /* The image used */
+  background-image: url("../image/about_the_company_paralax.jpg");
+  /* Full height */
+  height: 50vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
 
-.section {
-  position: relative;
-  height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
-  background-position: top;
-  background-repeat: no-repeat; }
-
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translateZ(-1px) scale(1.5);
-          transform: translateZ(-1px) scale(1.5);
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
-  z-index: -1; }
-
-.bg1::after {
-  background-image: url("../image/about_the_company_paralax.jpg"); }
-
-.bg2::after {
-  background-image: url("../image/about_the_company_paralax.jpg"); }
-
-.footer__item {
+.footer__logo {
+  float: left;
   width: 33%;
-  display: inline-block; }
+  padding-left: 48px; }
 
-.footer__item:nth-child(2) {
-  margin-left: -5px; }
+.footer__naw {
+  background: #9da4aa;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 33%;
+  float: left;
+  height: 150px;
+  padding-top: 33px; }
 
-.footer__item:nth-child(3) {
-  margin-left: -5px; }
+.footer__naw li {
+  text-decoration: none;
+  list-style: none; }
+
+.footer__logo img {
+  width: 95%;
+  padding-bottom: 30px;
+  padding-top: 20px; }
+
+.footer__address {
+  background: #28353f;
+  -webkit-background-size: cover;
+          background-size: cover;
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+  width: 34%;
+  float: right;
+  height: 150px;
+  padding-left: 40px;
+  padding-top: 30px;
+  word-wrap: normal;
+  line-height: 28px; }
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll; } }
 
 @media (max-width: 1240px) {
   .home__title {
@@ -500,8 +507,20 @@ a, a:hover {
     left: -195px; }
   .company__right {
     right: -100px; }
-  .company__text {
-    text-align: justify; } }
+  .footer__address {
+    width: 100%;
+    -webkit-background-size: cover;
+            background-size: cover;
+    text-align: center;
+    padding-bottom: 20px; }
+  .footer__naw {
+    width: 100%;
+    -webkit-background-size: cover;
+            background-size: cover;
+    text-align: center; }
+  .footer__logo {
+    width: 100%;
+    text-align: center; } }
 
 @media (max-width: 514px) {
   .home__caption {
