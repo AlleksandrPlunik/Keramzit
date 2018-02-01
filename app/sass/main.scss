@@ -19,6 +19,7 @@ html, body {
 $white: #fff;
 $font: #210604;
 $back_orange:#ff4200;
+$hover_button:#de3b02;
 
 body {
   font-family: HelveticaLight;
@@ -42,7 +43,6 @@ a, a:hover {
   text-decoration: none;
   color: $white;
   cursor: pointer;
-
 }
 .header {
   &__top {
@@ -87,6 +87,7 @@ a, a:hover {
   .navbar-collapse {
     background: $white;
     border: none;
+
   }
   .navbar-brand {
     padding: 0 !important;
@@ -97,6 +98,10 @@ a, a:hover {
     padding-top: 25px;
     float: right;
     padding-right: 40px;
+    li {
+      padding-right: 40px;
+      padding-bottom: 20px;
+    }
     a, a:hover {
       font-size: 14px;
       text-transform: uppercase;
@@ -107,10 +112,9 @@ a, a:hover {
   }
 
 }
-
 .home {
   position: relative;
-  height: 93vh;
+  height: 100vh;
   background-image: url('../image/home.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -118,7 +122,7 @@ a, a:hover {
   &__form {
     border-radius: 20px;
     width: 70%;
-    height: 48%;
+    height: 50%;
     margin: 0 auto;
     background: rgba(0, 0, 0, .3);
     position: absolute;
@@ -150,7 +154,7 @@ a, a:hover {
     letter-spacing: 3px;
   }
   &__button:hover {
-      background: #de3b02;
+      background: $hover_button;
   }
   &__button {
     background: $back_orange;
@@ -174,7 +178,6 @@ a, a:hover {
 
   }
 }
-
 .info {
   color: $font;
   font-family: HelveticaLight;
@@ -311,7 +314,6 @@ a, a:hover {
   }
 
 }
-
 .dark-bg {
   display: block;
   height: 450px;
@@ -443,13 +445,9 @@ a, a:hover {
     &_bold{
       font-weight: bold;
     }
-
   }
-
-
-
 }
-
+// parallax
 .parallax {
   /* The image used */
   background-image: url('../image/about_the_company_paralax.jpg');
@@ -463,7 +461,6 @@ a, a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .footer {
   &__logo {
     float: left;
@@ -506,6 +503,359 @@ a, a:hover {
   }
 
 }
+//css page 2
+.breadcrumb {
+  padding-top: 150px ;
+  padding-left: 30px;
+
+  background: none;
+  & a {
+    color: #28353f;
+  }
+
+  &>.avtive {
+    font-weight: bold!important;
+  }
+}
+.about {
+  width: 100%;
+  &__title {
+    font-size: 48px;
+    padding-left: 100px;
+    padding-top: 50px;
+    color: #2e3b45;
+  }
+  &__photo {
+    background: url("../image/about_the_company_paralax.jpg")no-repeat center;
+    height: 70vh;
+    position: relative;
+    background-size: cover;
+    max-width: 100%;
+    .photo__bg {
+      background: url("../image/page2_bg.png") no-repeat left;
+      position: absolute;
+      top: -120px;
+      padding: 123px;
+      right: -70px;
+      z-index: 1;
+      max-width: 100%;
+    }
+  }
+  &__text{
+    color: #210604;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &_bold {
+      font-weight: bold;
+    }
+  }
+// зробити адаптив
+  &__galery {
+    width: 100%;
+    height: 51vh;
+    &_1 {
+      background: url("../image/ebout_galeru1.jpg") no-repeat center ;
+      background-size: cover ;
+      height: 50vh;
+      width: 74.6%;
+      float: left;
+      padding-right: 7px;
+    }
+    &_2 {
+      background: url("../image/page2_sunset2.jpg") no-repeat center ;
+      background-size: cover ;
+      height: 50vh;
+      width: 25%;
+      float: right;
+    }
+  }
+  &__our {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    .our_left{
+      background: url("../image/about__company_left.jpg") no-repeat left;
+      position: absolute;
+      top: 166px;
+      padding: 127px;
+      left: -153px;
+      max-width: 100%;
+    }
+    .our_right{
+      background: url("../image/about__company_right.jpg")no-repeat left;
+      position: absolute;
+      top: -29px;
+      padding: 108px;
+      right: -26px;
+      max-width: 100%;
+    }
+    .our__title {
+      font-size: 30px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+    .our__text {
+      font-size: 16px;
+      text-align: left;
+      padding: 100px 50px;
+    }
+
+  }
+
+
+
+
+}
+//css page 3
+.details {
+  &__title {
+    padding-bottom: 50px;
+    padding-left: 30px;
+    float: left;
+    font-size: 48px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &__btn_calc {
+    float: right;
+    padding: 10px 50px;
+    border: solid 2px;
+    border-radius: 6px;
+    border-color: $back_orange;
+    color: $back_orange;
+    margin-top: 62px;
+    margin-right: 54px;
+    a {
+      color: $back_orange;
+    }
+    a:hover {
+      color: $hover_button;
+      border-color: $hover_button;
+    }
+  }
+  &__product {
+    max-width: 100%;
+    .product__img {
+      max-width: 100%;
+      text-align: center;
+      .product__img_img {
+        max-width: 100%;
+      }
+    }
+    .product__ditails {
+      text-align: center;
+      font-size: 18px;
+      display: block;
+
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .details__type {
+        display: inline-flex;
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .type_1 {
+          font-weight: 200;
+          color: #808080;
+        }
+        .type_2 {
+          padding-left: 86px;
+        }
+      }
+      .details__emount {
+        display: inline-flex;
+        font-size: 18px;
+        .type_1 {
+          font-weight: 200;
+          color: #808080;
+        }
+        .type_2 {
+          padding-left: 55px;
+        }
+      }
+      .details__price {
+        font-size: 24px;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-family: Helvetica;
+      }
+      .details__btn_buy {
+        font-size: 18px;
+        padding: 10px;
+        color: $white;
+        margin: 0 auto;
+        width: 200px;
+        border: solid 1px transparent;
+        background: $back_orange;
+        border-radius: 6px;
+        text-align: center;
+        text-decoration: none;
+        color: $white;
+
+      }
+      .details__btn_buy:hover {
+        color: $white;
+        background: #de3b02;
+        cursor: pointer;
+      }
+      .details__btn_buy :focus {
+        color: $white;
+      }
+    }
+  }
+}
+.calculator {
+  & li {
+    list-style: none;
+  }
+  & input:active {
+    border: solid 1px #8e8e8b;
+  }
+  & input:hover {
+    border: solid 1px #8e8e8b;
+  }
+  & input:focus {
+    border: solid 1px #8e8e8b;
+  }
+  h1{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  label {
+    padding-left: 10px;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  background: #e5e5e5;
+  text-decoration: none;
+  margin: 85px auto;
+  border-radius: 10px;
+  width: 500px;
+  height: 600px;
+  &__first {
+    display: block;
+
+    &_left {
+      float: left;
+      width: 150px;
+      height: 40px;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: 300;
+
+      border: solid 1px transparent;
+      input {
+        width: 148px;
+        height: 40px;
+        border: solid 1px transparent;
+        border-radius: 7px;
+        text-align: center;
+        outline:none;
+      }
+    }
+    &_right {
+      float: right;
+      margin-right: 85px;
+      width: 150px;
+      height: 40px;
+      border-radius: 7px;
+      border: solid 1px transparent;
+      input {
+        width: 148px;
+        height: 40px;
+        border: solid 1px transparent;
+        border-radius: 7px;
+        text-align: center;
+        outline:none;
+      }
+    }
+  }
+  &__heiht {
+    width: 76%;
+    height: 40px;
+    border-radius: 7px;
+    padding-top: 20px;
+    margin: 26px 35px;
+    border: solid 1px transparent;
+    input {
+      width: 100%;
+      height: 40px;
+      border: solid 1px transparent;
+      border-radius: 7px;
+      text-align: center;
+      outline:none;
+    }
+  }
+  &__width {
+    width: 76%;
+    height: 40px;
+    border-radius: 7px;
+    padding-top: 20px;
+    margin: 48px 35px;
+    border: solid 1px transparent;
+    input {
+      width: 100%;
+      height: 40px;
+      border: solid 1px transparent;
+      border-radius: 7px;
+      text-align: center;
+      outline:none;
+    }
+  }
+  &__fracshen {
+    width: 76%;
+    height: 40px;
+    border-radius: 7px;
+    padding-top: 20px;
+    margin: 48px 35px;
+    border: solid 1px transparent;
+    select {
+      width: 100%;
+      height: 40px;
+      border: solid 1px transparent;
+      border-radius: 7px;
+      text-align: center;
+      outline:none;
+    }
+  }
+  &__btn_count {
+    font-size: 18px;
+    padding: 10px;
+    color: $white;
+    margin: 100px 35px;
+    width: 352px;
+    border: solid 1px transparent;
+    background: $back_orange;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+  }
+  &__btn_count:hover {
+    color: $white;
+    background: #de3b02;
+    cursor: pointer;
+  }
+  &__btn_count:focus {
+    color: $white;
+  }
+}
+
+
+
+
+
+
 
 @media only screen and (max-device-width: 1024px) {
   .parallax {
@@ -516,6 +866,9 @@ a, a:hover {
   .home__title {
     font-size: 94px;
     letter-spacing: 19px;
+  }
+  .header .navbar-nav li {
+    padding-right: 30px;
   }
 
 }
@@ -550,6 +903,9 @@ a, a:hover {
   .info__background_content {
     width: 100%;
   }
+  .header .navbar-nav li {
+    padding-right: 7px;
+  }
 
 }
 @media (max-width: 900px) {
@@ -568,6 +924,12 @@ a, a:hover {
   }
   .header .logo {
     width: 238px;
+  }
+  .ebout__photo {
+   height:  50vh;
+  }
+  .header .navbar-nav li {
+    padding-right: 0;
   }
 }
 
@@ -599,6 +961,9 @@ a, a:hover {
   }
   .home__caption {
     font-size: 17px;
+  }
+  .ebout__photo {
+    height:  45vh;
   }
 
 
@@ -632,6 +997,22 @@ a, a:hover {
     width: 100%;
     text-align: center;
   }
+  .ebout__photo {
+    height:  40vh;
+  }
+  .photo__bg {
+    display: none;
+  }
+  .details__title {
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .details__btn_calc {
+    margin-top: 0;
+    margin-right: 130px;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 514px) {
   .home__caption {
@@ -657,6 +1038,13 @@ a, a:hover {
   .using__title {
     font-size: 25px;
   }
+  .ebout__photo {
+    height:  33vh;
+  }
+  .details__btn_calc {
+    margin-right: 79px;
+
+  }
 
 }
 @media (max-width: 453px) {
@@ -671,6 +1059,14 @@ a, a:hover {
   .header .logo {
     width: 250px;
     padding-top: 35px;
+  }
+  .ebout__photo {
+    height:  25vh;
+  }
+  .details__btn_calc {
+    margin-right: 45px;
+
+
   }
 
 }

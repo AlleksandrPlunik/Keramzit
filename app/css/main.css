@@ -91,6 +91,9 @@ a, a:hover {
   padding-top: 25px;
   float: right;
   padding-right: 40px; }
+  .header .navbar-nav li {
+    padding-right: 40px;
+    padding-bottom: 20px; }
   .header .navbar-nav a, .header .navbar-nav a:hover {
     font-size: 14px;
     text-transform: uppercase;
@@ -99,7 +102,7 @@ a, a:hover {
 
 .home {
   position: relative;
-  height: 93vh;
+  height: 100vh;
   background-image: url("../image/home.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -109,7 +112,7 @@ a, a:hover {
     -webkit-border-radius: 20px;
             border-radius: 20px;
     width: 70%;
-    height: 48%;
+    height: 50%;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -434,6 +437,309 @@ a, a:hover {
   word-wrap: normal;
   line-height: 28px; }
 
+.breadcrumb {
+  padding-top: 150px;
+  padding-left: 30px;
+  background: none; }
+  .breadcrumb a {
+    color: #28353f; }
+  .breadcrumb > .avtive {
+    font-weight: bold !important; }
+
+.about {
+  width: 100%; }
+  .about__title {
+    font-size: 48px;
+    padding-left: 100px;
+    padding-top: 50px;
+    color: #2e3b45; }
+  .about__photo {
+    background: url("../image/about_the_company_paralax.jpg") no-repeat center;
+    height: 70vh;
+    position: relative;
+    -webkit-background-size: cover;
+            background-size: cover;
+    max-width: 100%; }
+    .about__photo .photo__bg {
+      background: url("../image/page2_bg.png") no-repeat left;
+      position: absolute;
+      top: -120px;
+      padding: 123px;
+      right: -70px;
+      z-index: 1;
+      max-width: 100%; }
+  .about__text {
+    color: #210604;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .about__text_bold {
+      font-weight: bold; }
+  .about__galery {
+    width: 100%;
+    height: 51vh; }
+    .about__galery_1 {
+      background: url("../image/ebout_galeru1.jpg") no-repeat center;
+      -webkit-background-size: cover;
+              background-size: cover;
+      height: 50vh;
+      width: 74.6%;
+      float: left;
+      padding-right: 7px; }
+    .about__galery_2 {
+      background: url("../image/page2_sunset2.jpg") no-repeat center;
+      -webkit-background-size: cover;
+              background-size: cover;
+      height: 50vh;
+      width: 25%;
+      float: right; }
+  .about__our {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden; }
+    .about__our .our_left {
+      background: url("../image/about__company_left.jpg") no-repeat left;
+      position: absolute;
+      top: 166px;
+      padding: 127px;
+      left: -153px;
+      max-width: 100%; }
+    .about__our .our_right {
+      background: url("../image/about__company_right.jpg") no-repeat left;
+      position: absolute;
+      top: -29px;
+      padding: 108px;
+      right: -26px;
+      max-width: 100%; }
+    .about__our .our__title {
+      font-size: 30px;
+      text-transform: uppercase;
+      padding-bottom: 20px; }
+    .about__our .our__text {
+      font-size: 16px;
+      text-align: left;
+      padding: 100px 50px; }
+
+.details__title {
+  padding-bottom: 50px;
+  padding-left: 30px;
+  float: left;
+  font-size: 48px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.details__btn_calc {
+  float: right;
+  padding: 10px 50px;
+  border: solid 2px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border-color: #ff4200;
+  color: #ff4200;
+  margin-top: 62px;
+  margin-right: 54px; }
+  .details__btn_calc a {
+    color: #ff4200; }
+  .details__btn_calc a:hover {
+    color: #de3b02;
+    border-color: #de3b02; }
+
+.details__product {
+  max-width: 100%; }
+  .details__product .product__img {
+    max-width: 100%;
+    text-align: center; }
+    .details__product .product__img .product__img_img {
+      max-width: 100%; }
+  .details__product .product__ditails {
+    text-align: center;
+    font-size: 18px;
+    display: block; }
+    .details__product .product__ditails h2 {
+      font-size: 24px;
+      font-weight: bold; }
+    .details__product .product__ditails .details__type {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .details__product .product__ditails .details__type .type_1 {
+        font-weight: 200;
+        color: #808080; }
+      .details__product .product__ditails .details__type .type_2 {
+        padding-left: 86px; }
+    .details__product .product__ditails .details__emount {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      font-size: 18px; }
+      .details__product .product__ditails .details__emount .type_1 {
+        font-weight: 200;
+        color: #808080; }
+      .details__product .product__ditails .details__emount .type_2 {
+        padding-left: 55px; }
+    .details__product .product__ditails .details__price {
+      font-size: 24px;
+      font-weight: 900;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 30px;
+      font-family: Helvetica; }
+    .details__product .product__ditails .details__btn_buy {
+      font-size: 18px;
+      padding: 10px;
+      color: #fff;
+      margin: 0 auto;
+      width: 200px;
+      border: solid 1px transparent;
+      background: #ff4200;
+      -webkit-border-radius: 6px;
+              border-radius: 6px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff; }
+    .details__product .product__ditails .details__btn_buy:hover {
+      color: #fff;
+      background: #de3b02;
+      cursor: pointer; }
+    .details__product .product__ditails .details__btn_buy :focus {
+      color: #fff; }
+
+.calculator {
+  background: #e5e5e5;
+  text-decoration: none;
+  margin: 85px auto;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  width: 500px;
+  height: 600px; }
+  .calculator li {
+    list-style: none; }
+  .calculator input:active {
+    border: solid 1px #8e8e8b; }
+  .calculator input:hover {
+    border: solid 1px #8e8e8b; }
+  .calculator input:focus {
+    border: solid 1px #8e8e8b; }
+  .calculator h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-top: 40px; }
+  .calculator label {
+    padding-left: 10px;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 300; }
+  .calculator__first {
+    display: block; }
+    .calculator__first_left {
+      float: left;
+      width: 150px;
+      height: 40px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      font-size: 16px;
+      font-weight: 300;
+      border: solid 1px transparent; }
+      .calculator__first_left input {
+        width: 148px;
+        height: 40px;
+        border: solid 1px transparent;
+        -webkit-border-radius: 7px;
+                border-radius: 7px;
+        text-align: center;
+        outline: none; }
+    .calculator__first_right {
+      float: right;
+      margin-right: 85px;
+      width: 150px;
+      height: 40px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      border: solid 1px transparent; }
+      .calculator__first_right input {
+        width: 148px;
+        height: 40px;
+        border: solid 1px transparent;
+        -webkit-border-radius: 7px;
+                border-radius: 7px;
+        text-align: center;
+        outline: none; }
+  .calculator__heiht {
+    width: 76%;
+    height: 40px;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    padding-top: 20px;
+    margin: 26px 35px;
+    border: solid 1px transparent; }
+    .calculator__heiht input {
+      width: 100%;
+      height: 40px;
+      border: solid 1px transparent;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      text-align: center;
+      outline: none; }
+  .calculator__width {
+    width: 76%;
+    height: 40px;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    padding-top: 20px;
+    margin: 48px 35px;
+    border: solid 1px transparent; }
+    .calculator__width input {
+      width: 100%;
+      height: 40px;
+      border: solid 1px transparent;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      text-align: center;
+      outline: none; }
+  .calculator__fracshen {
+    width: 76%;
+    height: 40px;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    padding-top: 20px;
+    margin: 48px 35px;
+    border: solid 1px transparent; }
+    .calculator__fracshen select {
+      width: 100%;
+      height: 40px;
+      border: solid 1px transparent;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      text-align: center;
+      outline: none; }
+  .calculator__btn_count {
+    font-size: 18px;
+    padding: 10px;
+    color: #fff;
+    margin: 100px 35px;
+    width: 352px;
+    border: solid 1px transparent;
+    background: #ff4200;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; }
+  .calculator__btn_count:hover {
+    color: #fff;
+    background: #de3b02;
+    cursor: pointer; }
+  .calculator__btn_count:focus {
+    color: #fff; }
+
 @media only screen and (max-device-width: 1024px) {
   .parallax {
     background-attachment: scroll; } }
@@ -441,7 +747,9 @@ a, a:hover {
 @media (max-width: 1240px) {
   .home__title {
     font-size: 94px;
-    letter-spacing: 19px; } }
+    letter-spacing: 19px; }
+  .header .navbar-nav li {
+    padding-right: 30px; } }
 
 @media (max-width: 991px) {
   .icons .align-left, .icons .align-right {
@@ -462,7 +770,9 @@ a, a:hover {
     width: 100%;
     text-align: center; }
   .info__background_content {
-    width: 100%; } }
+    width: 100%; }
+  .header .navbar-nav li {
+    padding-right: 7px; } }
 
 @media (max-width: 900px) {
   .header__address {
@@ -474,7 +784,11 @@ a, a:hover {
   .home__title {
     font-size: 74px; }
   .header .logo {
-    width: 238px; } }
+    width: 238px; }
+  .ebout__photo {
+    height: 50vh; }
+  .header .navbar-nav li {
+    padding-right: 0; } }
 
 @media (max-width: 768px) {
   .header .navbar-collapse {
@@ -495,7 +809,9 @@ a, a:hover {
   .home__title {
     font-size: 61px; }
   .home__caption {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .ebout__photo {
+    height: 45vh; } }
 
 @media (max-width: 633px) {
   .home__title {
@@ -520,7 +836,19 @@ a, a:hover {
     text-align: center; }
   .footer__logo {
     width: 100%;
-    text-align: center; } }
+    text-align: center; }
+  .ebout__photo {
+    height: 40vh; }
+  .photo__bg {
+    display: none; }
+  .details__title {
+    float: none;
+    text-align: center;
+    padding-top: 20px; }
+  .details__btn_calc {
+    margin-top: 0;
+    margin-right: 130px;
+    margin-bottom: 30px; } }
 
 @media (max-width: 514px) {
   .home__caption {
@@ -538,7 +866,11 @@ a, a:hover {
   .icons__title {
     font-size: 25px; }
   .using__title {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .ebout__photo {
+    height: 33vh; }
+  .details__btn_calc {
+    margin-right: 79px; } }
 
 @media (max-width: 453px) {
   .home__title {
@@ -549,4 +881,8 @@ a, a:hover {
     margin-left: -108px; }
   .header .logo {
     width: 250px;
-    padding-top: 35px; } }
+    padding-top: 35px; }
+  .ebout__photo {
+    height: 25vh; }
+  .details__btn_calc {
+    margin-right: 45px; } }
