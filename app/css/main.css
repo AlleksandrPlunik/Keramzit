@@ -42,6 +42,7 @@ body {
   padding-bottom: 20px; }
 
 a, a:hover {
+  color: #fff;
   text-decoration: none;
   cursor: pointer; }
 
@@ -117,11 +118,11 @@ a, a:hover {
     -webkit-border-radius: 20px;
             border-radius: 20px;
     width: 70%;
-    height: 50%;
+    height: 55%;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 0;
     right: 0;
     color: #fff;
@@ -424,6 +425,11 @@ a, a:hover {
   .footer__naw li {
     text-decoration: none;
     list-style: none; }
+    .footer__naw li a {
+      color: #fff;
+      text-decoration: none; }
+    .footer__naw li a:hover, .footer__naw li :focus {
+      color: #ff4200; }
 
 .footer__address {
   background: #28353f;
@@ -483,22 +489,13 @@ a, a:hover {
       font-weight: bold; }
   .about__galery {
     width: 100%;
-    height: 51vh; }
+    height: 500px; }
     .about__galery_1 {
-      background: url("../image/ebout_galeru1.jpg") no-repeat center;
+      background: url("../image/02_about-company.jpg") no-repeat center;
       -webkit-background-size: cover;
               background-size: cover;
-      height: 50vh;
-      width: 74.6%;
-      float: left;
-      padding-right: 7px; }
-    .about__galery_2 {
-      background: url("../image/page2_sunset2.jpg") no-repeat center;
-      -webkit-background-size: cover;
-              background-size: cover;
-      height: 50vh;
-      width: 25%;
-      float: right; }
+      height: 500px;
+      max-width: 100%; }
   .about__our {
     position: relative;
     width: 100%;
@@ -950,7 +947,8 @@ a, a:hover {
   font-weight: 500;
   padding-bottom: 50px;
   text-transform: uppercase;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  padding-left: 30px; }
 
 .blog {
   position: relative;

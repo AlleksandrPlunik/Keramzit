@@ -39,6 +39,7 @@ body {
   padding-bottom: 20px;
 }
 a, a:hover {
+  color: $white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -127,11 +128,11 @@ a, a:hover {
   &__form {
     border-radius: 20px;
     width: 70%;
-    height: 50%;
+    height: 55%;
     margin: 0 auto;
     background: rgba(0, 0, 0, .3);
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 0;
     right: 0;
     color: #fff;
@@ -471,6 +472,14 @@ a, a:hover {
     li {
       text-decoration: none;
       list-style: none;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+      a:hover, :focus {
+        color: $back_orange;
+      }
+
     }
   }
   &__address {
@@ -542,22 +551,15 @@ a, a:hover {
 // зробити адаптив
   &__galery {
     width: 100%;
-    height: 51vh;
+    height: 500px;
+
     &_1 {
-      background: url("../image/ebout_galeru1.jpg") no-repeat center ;
+      background: url("../image/02_about-company.jpg") no-repeat center ;
       background-size: cover ;
-      height: 50vh;
-      width: 74.6%;
-      float: left;
-      padding-right: 7px;
+      height: 500px;
+      max-width: 100%;
     }
-    &_2 {
-      background: url("../image/page2_sunset2.jpg") no-repeat center ;
-      background-size: cover ;
-      height: 50vh;
-      width: 25%;
-      float: right;
-    }
+
   }
   &__our {
     position: relative;
@@ -1069,6 +1071,7 @@ a, a:hover {
   padding-bottom: 50px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  padding-left: 30px;
 }
 .blog{
   position: relative;
