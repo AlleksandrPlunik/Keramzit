@@ -128,7 +128,7 @@ a, a:hover {
   &__form {
     border-radius: 20px;
     width: 70%;
-    height: 55%;
+    height: 47%;
     margin: 0 auto;
     background: rgba(0, 0, 0, .3);
     position: absolute;
@@ -176,6 +176,9 @@ a, a:hover {
     left: 50%;
     margin-left: -141px;
     margin-top: 50px;
+    a:hover {
+      color: $white;
+    }
   }
 }
 .info {
@@ -477,7 +480,7 @@ a, a:hover {
         text-decoration: none;
       }
       a:hover, :focus {
-        color: $back_orange;
+        color: $white;
       }
 
     }

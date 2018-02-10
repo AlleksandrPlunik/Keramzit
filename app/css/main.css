@@ -118,7 +118,7 @@ a, a:hover {
     -webkit-border-radius: 20px;
             border-radius: 20px;
     width: 70%;
-    height: 55%;
+    height: 47%;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -162,6 +162,8 @@ a, a:hover {
     left: 50%;
     margin-left: -141px;
     margin-top: 50px; }
+    .home__button a:hover {
+      color: #fff; }
 
 .info {
   color: #210604;
@@ -429,7 +431,7 @@ a, a:hover {
       color: #fff;
       text-decoration: none; }
     .footer__naw li a:hover, .footer__naw li :focus {
-      color: #ff4200; }
+      color: #fff; }
 
 .footer__address {
   background: #28353f;
