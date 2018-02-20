@@ -741,7 +741,7 @@ a, a:hover {
     padding: 10px;
     color: #fff;
     margin: 100px 35px;
-    width: 76%;
+    width: 352px;
     border: solid 1px transparent;
     background: #ff4200;
     -webkit-border-radius: 6px;
@@ -820,7 +820,7 @@ a, a:hover {
     padding: 10px;
     color: #fff;
     margin: 100px 35px;
-    width: 76%;
+    width: 352px;
     border: solid 1px transparent;
     background: #ff4200;
     -webkit-border-radius: 6px;
@@ -1311,8 +1311,6 @@ a, a:hover {
       left: -195px; }
     .company__right {
       right: -100px; }
-  .footer ul {
-    padding-left: 0; }
   .footer__address {
     width: 100%;
     -webkit-background-size: cover;
@@ -1342,14 +1340,6 @@ a, a:hover {
   .popup__form_title {
     font-size: 24px; } }
 
-@media (max-width: 533px) {
-  .calculator {
-    width: auto;
-    float: none; }
-    .calculator_2 {
-      width: auto;
-      float: none; } }
-
 @media (max-width: 514px) {
   .home__caption {
     font-size: 14px; }
@@ -1373,33 +1363,26 @@ a, a:hover {
     max-width: 100%; }
     .shop__card .type_2 {
       padding-left: 200px; }
+  .calculator {
+    margin-left: -25px;
+    float: none; }
+  .calculator_2 {
+    margin-left: -25px;
+    float: none; }
   .info__background_img {
     height: 420px; }
   .popup {
     font-size: 0.6em; }
-  __form_name {
-    width: 78%;
-    padding: 1px; }
-  __form_button {
-    width: 78%; }
-  __form_title {
-    font-size: 23px; }
-  __form_text {
-    font-size: 12px;
-    padding-bottom: 3px; }
-  .calculator {
-    height: 640px; }
-    .calculator__first_right {
-      width: 83%;
-      float: none;
-      margin-top: 35px; }
-      .calculator__first_right input {
-        width: 100%; }
-    .calculator__first_left {
-      width: 83%;
-      float: none; }
-      .calculator__first_left input {
-        width: 100%; } }
+    .popup__form_name {
+      width: 78%;
+      padding: 1px; }
+    .popup__form_button {
+      width: 78%; }
+    .popup__form_title {
+      font-size: 23px; }
+    .popup__form_text {
+      font-size: 12px;
+      padding-bottom: 3px; } }
 
 @media (max-width: 453px) {
   .home__title {
@@ -1417,6 +1400,13 @@ a, a:hover {
     max-width: 100%; }
     .shop__card .type_2 {
       padding-left: 150px; }
+  .calculator {
+    margin-left: -55px;
+    float: none; }
+    .calculator h1 {
+      font-size: 22px; }
+    .calculator_2 {
+      margin-left: -55px; }
   .blog__title {
     font-size: 25px; }
   .company__right {
@@ -1429,18 +1419,9 @@ a, a:hover {
     padding-left: 11px;
     top: 80px; }
   .popup__form_title {
-    font-size: 15px; }
-  .calculator {
-    height: 680px; } }
+    font-size: 15px; } }
 
 @media (max-width: 415px) {
   .header .navbar-brand {
     margin-left: 11px;
-    top: 71px; }
-  .contacts__right {
-    padding-left: 0;
-    font-size: 14px; }
-    .contacts__right ul {
-      padding-left: 0; }
-    .contacts__right p {
-      padding-left: 0; } }
+    top: 71px; } }

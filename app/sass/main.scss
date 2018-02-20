@@ -44,8 +44,8 @@ a, a:hover {
   cursor: pointer;
 }
 .header {
-  &__top {
 
+  &__top {
     padding: 10px 0;
     background: #333;
   }
@@ -83,44 +83,48 @@ a, a:hover {
     width: 340px;
     padding-top: 10px;
   }
-  .navbar-collapse {
-    background: $white;
-    border: none;
-
-  }
-  .navbar-nav>li>a:active {
-    color: $back_orange !important;
-  }
-  .navbar-brand {
-    padding: 0 !important;
-    margin-left: 40px;
-    padding-top: 20px;
-  }
-  .navbar-nav {
-    padding-top: 25px;
-    float: right;
-    padding-right: 40px;
-    text-transform: uppercase;
-    li:active {
+  .navbar {
+    &-collapse {
+      background: $white;
+      border: none;
+    }
+    &-nav > li > a:active {
       color: $back_orange !important;
     }
-    li {
+    &-brand {
+      padding: 0 !important;
+      margin-left: 40px;
+      padding-top: 20px;
+    }
+    &-nav {
+      padding-top: 25px;
+      float: right;
       padding-right: 40px;
-      padding-bottom: 20px;
-
-
-    a:hover  {
-      font-size: 14px;
       text-transform: uppercase;
-      color: $back_orange !important;
-      vertical-align: middle;
+      li:active {
+        color: $back_orange !important;
+      }
+      li {
+        padding-right: 40px;
+        padding-bottom: 20px;
+
+        a:hover {
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $back_orange !important;
+          vertical-align: middle;
+        }
+      }
     }
+    &-toggle {
+      margin-top: 20px;
+      background: #333;
     }
   }
 }
 .home {
   position: relative;
-  height: 100vh;
+  height: 700px;
   background-image: url('../image/home.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -128,17 +132,18 @@ a, a:hover {
   &__form {
     border-radius: 20px;
     width: 70%;
-    height: 47%;
+    height: 60%;
     margin: 0 auto;
     background: rgba(0, 0, 0, .3);
     position: absolute;
-    top: 35%;
+    top: 31%;
     left: 0;
     right: 0;
     color: #fff;
     overflow: hidden;
   }
   &__title {
+    padding-top: 5px;
     text-align: center;
     font-size: 115px;
     font-family: HelveticaBlack;
@@ -288,13 +293,13 @@ a, a:hover {
       width: 100%;
       color: $white;
       height: 35px;
-      padding: 5px;
+      padding: 6px;
       text-decoration: none;
     }
   }
   &__name {
     font-size: 16px;
-    padding: 5px;
+    padding: 6px;
     border: solid 1px #d7d7d7;
     border-radius: 6px;
     background: $white;
@@ -370,7 +375,7 @@ a, a:hover {
     width: 180px;
     height: 45px;
     border-radius: 6px;
-    padding-top: 5px;
+    padding-top: 6px;
 
   }
   &__text_captions {
@@ -506,7 +511,7 @@ a, a:hover {
 }
 //css page 2
 .breadcrumb {
-  padding-top: 150px ;
+  padding-top: 160px ;
   padding-left: 30px;
   background: none;
   & a {
@@ -520,7 +525,7 @@ a, a:hover {
   width: 100%;
   &__title {
     font-size: 48px;
-    padding-left: 100px;
+    padding-left: 40px;
     padding-top: 24px;
     padding-bottom: 18px;
     color: #2e3b45;
@@ -592,7 +597,7 @@ a, a:hover {
     .our__text {
       font-size: 16px;
       text-align: left;
-      padding: 100px 50px;
+      padding: 50px 50px;
     }
   }
 }
@@ -600,22 +605,25 @@ a, a:hover {
 .details {
   &__title {
     padding-bottom: 50px;
-    padding-left: 30px;
+    padding-left: 50px;
     float: left;
     font-size: 48px;
-    padding-top: 50px;
+    padding-top: 0;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
   }
   &__btn_calc {
     float: right;
-    padding: 10px 50px;
     border: solid 2px;
     border-radius: 6px;
     border-color: $back_orange;
     color: $back_orange;
-    margin-top: 62px;
-    margin-right: 54px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 80px;
+  }
     a {
       color: $back_orange;
     }
@@ -623,7 +631,7 @@ a, a:hover {
       color: $hover_button;
       border-color: $hover_button;
     }
-  }
+
   &__product {
     max-width: 100%;
     .product__img {
@@ -701,6 +709,7 @@ a, a:hover {
 }
 .calculator {
   float: left;
+  max-width: 100%;
   & li {
     list-style: none;
   }
@@ -728,7 +737,7 @@ a, a:hover {
   }
   background: #e5e5e5;
   text-decoration: none;
-  margin: 85px auto;
+  margin: 85px 0 50px 80px;
   border-radius: 10px;
   width: 500px;
   height: 600px;
@@ -823,7 +832,7 @@ a, a:hover {
     padding: 10px;
     color: $white;
     margin: 100px 35px;
-    width: 352px;
+    width: 76%;
     border: solid 1px transparent;
     background: $back_orange;
     border-radius: 6px;
@@ -910,7 +919,7 @@ a, a:hover {
     padding: 10px;
     color: $white;
     margin: 100px 35px;
-    width: 352px;
+    width: 76%;
     border: solid 1px transparent;
     background: $back_orange;
     border-radius: 6px;
@@ -928,6 +937,9 @@ a, a:hover {
   }
 }
 .shop{
+  &__{
+    overflow: hidden;
+  }
   &__title {
     padding-top: 14px;
     padding-bottom: 44px;
@@ -1070,7 +1082,7 @@ a, a:hover {
 .gallery__title{
   color: #2e3b45;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 50px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -1090,10 +1102,10 @@ a, a:hover {
   }
   &__title {
     font-size: 50px;
-    padding: 30px 170px 30px 30px;
+    padding: 30px 170px 30px 40px;
     text-transform: uppercase;
     letter-spacing: 8px;
-    font-weight: 600;
+    font-weight: 400;
   }
   &__construction_left {
     float: left;
@@ -1193,7 +1205,7 @@ a, a:hover {
   }
  &__title {
    font-size: 50px;
-   font-weight: 600;
+   font-weight: 400;
    letter-spacing: 2px;
    padding-top: 10px;
    padding-left: 40px;
@@ -1226,6 +1238,83 @@ a, a:hover {
  }
 
 }
+.popup {
+  background: rgba(0, 0, 0, .5);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  display: none;
+  &__bacground {
+    background: rgb(229,229,229);
+    width: 40%;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 30%;
+    border-radius: 20px;
+  }
+  &__form {
+    overflow: hidden;
+    &_title{
+      font-size: 32px;
+      font-family: HelveticaLight;
+      letter-spacing: 5px;
+      padding-top: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &_text {
+      text-align: center;
+      font-size: 16px;
+      color: #9d9d9d;
+      padding: 7px 100px;
+    }
+    &_name{
+      font-size: 16px;
+      padding: 6px;
+      border: solid 1px #d7d7d7;
+      border-radius: 6px;
+      background: $white;
+      margin: 15px auto;
+      width: 350px;
+      input {
+        width: 100%;
+        height: 35px;
+        border: transparent;
+        text-align: center;
+      }
+    }
+    &_button:hover{
+      color: $white;
+      background: #de3b02;
+    }
+    &_button{
+      font-size: 18px;
+      padding: 7px ;
+      color: $white;
+      margin: 40px auto;
+      width: 350px;
+      border: solid  1px transparent;
+      background: $back_orange;
+      border-radius: 6px;
+      text-align: center;
+      text-decoration: none;
+      &_btn :focus {
+        color: $white;
+      }
+      &_btn {
+        width: 100%;
+        color: $white;
+        height: 35px;
+        padding: 6px;
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 @media only screen and (max-device-width: 1024px) {
   .parallax {
@@ -1233,17 +1322,18 @@ a, a:hover {
   }
 
 }
+
 @media (max-width: 1240px) {
   .home__title {
     font-size: 94px;
     letter-spacing: 19px;
   }
   .header .navbar-nav li {
-    padding-right: 30px;
+    padding-right: 4px;
   }
   .shop__card {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
    .type_2 {
      padding-left: 18px;
    }
@@ -1251,9 +1341,21 @@ a, a:hover {
   .footer__logo img {
     width: 88%;
   }
+  .calculator {
+    float: none;
+    margin: 70px auto;
+  }
+  .calculator_2 {
+    float: none;
+    margin: 0 auto 50px auto ;
+  }
+  .popup__bacground {
+    width: 50%;
+  }
+
+
 
 }
-
 
 @media (max-width: 991px) {
   .icons {
@@ -1261,25 +1363,31 @@ a, a:hover {
       text-align: center;
       .icons__caption {
         padding-right: 0;
+        padding-left: 20px;
       }
     }
   }
   .using__wrapper {
     width: 100%;
   }
+  .using__details {
+    opacity: 1;
+  }
   .home {
     &__title {
       font-size: 89px;
     }
-    &__caption{
+    &__caption {
       font-size: 20px;
     }
-    &__form{
+    &__form {
       width: 88%;
+      height: 56%;
     }
   }
-  .order{
+  .order {
     height: 500px;
+    background-position: center;
   }
   .info__background_img {
     width: 100%;
@@ -1287,10 +1395,17 @@ a, a:hover {
   }
   .info__background_content {
     width: 100%;
+    height: auto;
   }
-  .header .navbar-nav li {
+  .header {
+    .navbar-nav li {
     padding-right: 7px;
   }
+  .logo {
+    width: 238px;
+    padding-top: 20px;
+  }
+}
   .shop__card {
     max-width: 80%;
   }
@@ -1324,11 +1439,17 @@ a, a:hover {
       padding: 40px;
       float: none;
     }
-
-
   }
-
-
+  .info__content {
+    height: auto;
+  }
+  .popup__bacground {
+    width: 80%;
+    left: 10%;
+  }
+  .popup__form_text {
+    padding: 20px ;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1345,19 +1466,41 @@ a, a:hover {
   .home__title {
     font-size: 74px;
   }
-  .header .logo {
-    width: 238px;
-  }
   .about__photo {
    height:  50vh;
   }
-  .header .navbar-nav li {
+  .header .navbar-nav {
     padding-right: 0;
+     li {
+       padding-right: 0;
+       font-size: 12px;
+    }
   }
 }
 
 @media (max-width: 768px) {
+  .details__title {
+    padding: 0;
+    float: none;
+    text-align: center;
+  }
+  .details__btn_calc {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-bottom: 30px;
+  }
   .header {
+    &__address {
+      display: block;
+      width: auto;
+      text-align: center;
+    }
+    &__contact{
+      display: block;
+      width: auto;
+      text-align: center;
+    }
     .navbar {
       &-collapse {
         background: $white;
@@ -1365,20 +1508,17 @@ a, a:hover {
       }
       &-brand {
         position: absolute;
-        top: 60px;
+        top: 52px;
       }
       &-header {
-        height: 85px;
-      }
-      &-toggle {
-        margin-top: 30px;
-        background: #333;
+        height: 74px;
       }
       &-nav {
         float: none;
         padding-left: 25px;
         padding-top: 0;
       }
+
     }
   }
   .home {
@@ -1429,6 +1569,9 @@ a, a:hover {
     }
   }
   .footer{
+    ul {
+      padding-left: 0;
+    }
    &__address {
      width: 100%;
      background-size: cover;
@@ -1441,8 +1584,7 @@ a, a:hover {
     text-align: center;
     }
   &__logo {
-    width: 85%;
-    text-align: center;
+    display: none;
     }
   }
   .about__photo {
@@ -1450,16 +1592,6 @@ a, a:hover {
   }
   .photo__bg {
     display: none;
-  }
-  .details__title {
-    float: none;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .details__btn_calc {
-    margin-top: 0;
-    margin-right: 130px;
-    margin-bottom: 30px;
   }
   .shop__card {
     max-width: 80%;
@@ -1469,6 +1601,25 @@ a, a:hover {
   }
   .footer__logo img {
     width: 73%;
+  }
+  .details__btn_calc {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .popup__form_title {
+    font-size: 24px;
+  }
+
+
+}
+@media (max-width: 533px) {
+  .calculator {
+    width: auto;
+    float: none;
+    &_2 {
+      width: auto;
+      float: none;
+    }
   }
 
 
@@ -1480,7 +1631,7 @@ a, a:hover {
       font-size: 14px;
     }
     &__form {
-      height: 43%;
+      height: 51%;
     }
     &__title {
       letter-spacing: 15px;
@@ -1503,28 +1654,51 @@ a, a:hover {
   .about__photo {
     height:  33vh;
   }
-  .details__btn_calc {
-    margin-right: 79px;
-  }
-
   .shop__card {
-
     max-width: 100%;
     .type_2 {
       padding-left: 200px;
     }
   }
-  .calculator {
-     margin-left: -25px;
-    float: none;
-   }
-  .calculator_2 {
-    margin-left: -25px;
-    float: none;
+  .info__background_img {
+    height: 420px;
   }
-
-}
-
+  .popup {
+    font-size: 0.6em;
+  }
+  &__form_name {
+    width: 78%;
+    padding: 1px;
+  }
+  &__form_button {
+    width: 78%;
+  }
+    &__form_title {
+      font-size: 23px;
+    }
+    &__form_text {
+      font-size: 12px;
+      padding-bottom: 3px;
+    }
+  .calculator {
+    height:  640px;
+    &__first_right {
+      width: 83%;
+      float: none;
+      margin-top: 35px;
+      input {
+        width: 100%;
+      }
+    }
+    &__first_left {
+      width: 83%;
+      float: none;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  }
 @media (max-width: 453px) {
   .home__title {
     letter-spacing: 10px;
@@ -1536,13 +1710,10 @@ a, a:hover {
   }
   .header .logo {
     width: 250px;
-    padding-top: 35px;
+    padding-top: 20px;
   }
   .about__photo {
     height:  25vh;
-  }
-  .details__btn_calc {
-    margin-right: 45px;
   }
   .shop__card {
     max-width: 100%;
@@ -1550,19 +1721,44 @@ a, a:hover {
       padding-left: 150px;
     }
   }
-  .calculator {
-    margin-left: -55px;
-    float: none;
-    h1 {
-      font-size: 22px;
-    }
-    &_2 {
-      margin-left: -55px;
-
-    }
-  }
   .blog__title {
     font-size: 25px;
   }
-
+  .company__right {
+    display: none;
+  }
+  .info__background_img {
+    height: 357px;
+  }
+  .info__content {
+    height: auto;
+  }
+  .navbar-brand {
+    padding-left: 11px;
+    top: 80px;
+  }
+  .popup__form_title {
+    font-size: 15px;
+  }
+  .calculator {
+    height: 680px;
+  }
+}
+@media (max-width: 415px){
+  .header{
+    .navbar-brand {
+      margin-left: 11px;
+      top: 71px;
+    }
+  }
+  .contacts__right {
+    padding-left: 0;
+    font-size: 14px;
+    ul {
+      padding-left: 0;
+    }
+    p {
+      padding-left: 0;
+    }
+  }
 }
